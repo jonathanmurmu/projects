@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset="UTF-8">
+	<!--tell the IE to use the latest rendering engine-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<!--set the page width to size of the device and zoom level to 1-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Login</title>
+	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="/cgi-bin/task/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/cgi-bin/task/static/css/custom.css">
+ </head>
+<body>
+
+<div class="container-fluid login-background">
+	<!-- navigation bar -->
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+				<div class="navbar-header">					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Bubble.com</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav horizontal-center">
+						<li class="active">
+							<a href="#">Profile</a>
+						</li>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+	<!-- navigation bar end -->
+
+	<div class="row login-background">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4 vertical-center"> <!--to make the form in the center of the page-->
+
+			<div class="jumbotron transparent">
+				<!--  error message -->
+ 				{0}
+				<h2>
+					Login
+				</h2>
+				<form role="form" action="/cgi-bin/task/app/authenticate.py" method="post">
+						<!--username-->						
+						<div class="form-group has-error has-feedback">					     
+					        <input type="text" class="form-control" id="username" name="username" placeholder="Wrong Username">
+					        <span class="glyphicon glyphicon-remove form-control-feedback"></span>					   
+					    </div>
+						<!--password-->						
+						<div class="form-group has-error has-feedback">					     
+					        <input type="password" class="form-control" name="password" id="password" placeholder="Wrong Password">
+					        <span class="glyphicon glyphicon-remove form-control-feedback"></span>					   
+					    </div>
+						<div class="row">
+							<span class="col-md-6">
+								<!--sign in button-->
+								<input type="submit" class="btn btn-primary custom-but  btn-signin" value="Sign In"/>
+								<!-- 	Sign In
+								</button> -->
+							</span>						
+					</form>
+
+					<!--sign up button-->
+					<span class="col-md-6">
+						
+						<a href="/cgi-bin/task/static/html/register.html"><input type="button" class="btn btn-default custom-but" value="Sign Up"><a>
+					</span>
+
+					</div><!--row-->
+					<!--forgot password-->
+					<div>
+						<label><a href="/cgi-bin/task/static/html/forgot.html" class="graycolor">Forgot your password?</a></label>
+					</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+<script src="/cgi-bin/task/static/js/jquery.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+<script src="/cgi-bin/task/static/js/bootstrap.min.js"></script>
+</body>
+</html>
