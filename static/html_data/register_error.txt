@@ -8,8 +8,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Register Here</title>
 	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-	<link rel="stylesheet" type="text/css" href="/cgi-bin/task/static/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/cgi-bin/task/static/css/custom.css">
+	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/custom.css">
  </head>
 <body>
 
@@ -52,7 +52,7 @@
 				<div class="alert alert-danger">
   					<strong>Error!</strong> {10}
 				</div>
-				<form class="form-horizontal" action="/cgi-bin/task/app/save.py" method="post">
+				<form class="form-horizontal" action="/cgi-bin/projects/task/app/save.py" method="post">
 					<!--Name-->
 					<div class="form-group">				
 						<label for="first_name" class="col-sm-4 control-label">

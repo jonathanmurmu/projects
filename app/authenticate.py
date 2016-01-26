@@ -112,4 +112,3 @@ print '</html>'
 
 # close the mysql database connection
 db.close()
-

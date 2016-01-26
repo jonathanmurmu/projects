@@ -25,7 +25,7 @@ try:
 	sql_status = "UPDATE user_detail SET status='active' where user_detail_id = {0}".format(user_id)
 	cursor.execute(sql_status)
 	print '<h2>Your account is acctive.</h2>'
-	print '<h3>Please <a href="http://localhost/cgi-bin/task/static/html/login.html">login</a> to continue<h3>'
+	print '<h3>Please <a href="http://localhost/cgi-bin/projects/task/static/html/login.html">login</a> to continue<h3>'
 
 	db.commit()
 except:

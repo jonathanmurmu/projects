@@ -35,7 +35,7 @@ if fileitem.filename:
     unique_name=uuid.uuid4().fields[0]
     open('../static/images/{0}{1}'.format(unique_name,fn), 'wb').write(fileitem.file.read())
     message = 'The file {0} was uploaded successfully in server'.format(fn)
-    path="/cgi-bin/task/static/images/{0}{1}".format(unique_name,fn)
+    path="/cgi-bin/projects/task/static/images/{0}{1}".format(unique_name,fn)
 
     # storing the image path to database
     try:

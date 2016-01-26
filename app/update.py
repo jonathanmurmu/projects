@@ -45,7 +45,7 @@ try:
      .format(first_name,last_name,gender,date_of_birth,contact_number,email,username,password,user_id)
     cursor.execute(sql_update)
     db.commit()
-    print """<br>Successfully updated please <a href="http://localhost/cgi-bin/task/login.html">login</a>again"""
+    print """<br>Successfully updated please <a href="http://localhost/cgi-bin/projects/task/login.html">login</a>again"""
 
 except:
     print "<br>error in editing"

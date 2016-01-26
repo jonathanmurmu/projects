@@ -248,7 +248,7 @@ elif password == confirm_password:
             # writing the email content to send
             text="""Click this link to activate your account
 
-                    <a href="http://localhost/cgi-bin/task/app/activate.py?id={0}">link</a>
+                    <a href="http://localhost/cgi-bin/projects/task/app/activate.py?id={0}">link</a>
                     """.format(user_id)
 
             server = smtplib.SMTP('email.mindfiresolutions.com',587)
