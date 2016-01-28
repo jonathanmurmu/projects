@@ -1,7 +1,7 @@
 Assginment - Login, signup and profile page.
 =============================================================================================================================
 
-Packages required for executing the assgingment
+Packages required for executing the assgingment\n
 1. MySQLdb
 2. validate_email
 3. cgi
