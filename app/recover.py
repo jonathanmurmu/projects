@@ -59,16 +59,22 @@ if data==1:
         try:
             server.sendmail(sender,[to],body)
             print '<h3>Username and password is sent to your email address</h3>'
-        except:
-            print '<h3>Error sending email</h3>'
+        except Exception as e:
+            # print '<h3>Error sending email</h3>'
+            line = open('../static/html_data/forgot_error.txt')
+            print ''.join(line).format(to,e)
 
-    except:
-        print "<h3>Error</h3>"
+    except Exception as e:
+        # print "<h3>Error</h3>"
+        line = open('../static/html_data/forgot_error.txt')
+        print ''.join(line).format(to,e)
 
     server.quit()
 
 else:
-    print '<h3>Email does not exists..!</h3>'
+    # print '<h3>Email does not exists..!</h3>'
+    line = open('../static/html_data/forgot_error.txt')
+    print ''.join(line).format(to,"Email does not exists")
 
 db.close()
 print "</body>"
