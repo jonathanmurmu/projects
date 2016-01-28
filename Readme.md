@@ -7,7 +7,8 @@ Packages required for executing the assgingment :-
 3. cgi
 
 Path required for executing the assginment in browser :- 
-  http://localhost/cgi-bin/projects/task/static/html/login.html
+
+	http://localhost/cgi-bin/projects/task/static/html/login.html
 
 CGI configuration :-
 ---------------------------------------------------
