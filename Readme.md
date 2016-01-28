@@ -13,12 +13,12 @@ CGI configuration :-
 ---------------------------------------------------
 serve-cgi-bin.conf
 
+	< Directory "/var/www/html/cgi-bin" >
 		AddHandler cgi-script .cgi .py
 		AllowOverride None
 		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
 		Require all granted
-
-inside < Directory "/var/www/html/cgi-bin" > tag
+	< /Directory >
 
 
 Note :- Please keep the 'app' and 'static' folder inside '/var/www/cgi-bin/projects/task/' directory. And make sure that your Web Server supports CGI and it is configured to handle CGI Programs.
