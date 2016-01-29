@@ -28,7 +28,7 @@ function validateForm(){
 	if (date_of_birth == "" || date_of_birth == "None" || !date_of_birth.match(date)){
 		error_message += "Enter valid date of birth (yyyy-mm-dd)\n";
 	}
-	//checkign for digits and length of 10, in the contact number field
+	//checking for digits and length of 10, in the contact number field
 	if (contact_number == "" || contact_number == "None" || !contact_number.match(/^[0-9]{10}$/g)){
 		error_message += "Enter contact number (10 digits only)\n";
 	}
