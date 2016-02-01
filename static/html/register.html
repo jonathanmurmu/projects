@@ -50,15 +50,15 @@
 						<label for="first_name" class="col-sm-4 control-label">
 							Name<sup>*</sup>
 						</label>
-						<div class="col-sm-3 error-div">
+						<div class="col-sm-3">
 							<input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+							<div></div>
 						</div>
 						<div class="col-sm-3">
 							<input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+							<div></div>
 						</div>
 					</div>
-
-
 					<!-- gender -->
 					<div class="form-group">
 						<label class="control-label col-sm-4">Gender:<sup>*</sup></label>
@@ -66,21 +66,20 @@
 	      					<input type="radio" name="gender" id="male" value="male">Male
 	    				</label>
 	    				<label class="control-radio-inline">
-	      					<input type="radio" name="gender" id = "female" value="female">Female
-	    				</label>			
+	      					<input type="radio" name="gender" id = "female" value="female">Female		
+	    				</label>
+	    				<label id="error-text-radio"></label>
 					</div>
-
 					<!-- date of birth -->
-					<div class="form-group">
-						 
+					<div class="form-group">						 
 						<label for="date_of_birth" class="col-sm-4 control-label">
 							Date Of Birth<sup>*</sup>
 						</label>
 						<div class="col-sm-4">
 							<input type="text" placeholder="yyyy-mm-dd" class="form-control" id="date_of_birth" name="date_of_birth"/>
+							<div></div>
 						</div>
 					</div>
-
 					<!-- phone number -->
 					<div class="form-group">					 
 						<label for="phone-number" class="col-sm-4 control-label">
@@ -88,9 +87,9 @@
 						</label>
 						<div class="col-sm-6">
 							<input type="text" class="form-control" id="contact_number" name="contact_number" placeholder="Contact Number"/>
+							<div></div>
 						</div>
 					</div>
-
 					<!-- email -->
 					<div class="form-group">					 
 						<label for="text" class="col-sm-4 control-label">
@@ -98,9 +97,9 @@
 						</label>
 						<div class="col-sm-6">
 							<input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
+							<div></div>
 						</div>
 					</div>
-
 					<!-- username -->
 					<div class="form-group">					 
 						<label for="email" class="col-sm-4 control-label">
@@ -108,6 +107,7 @@
 						</label>
 						<div class="col-sm-6">
 							<input type="text" class="form-control" id="username" name="username" placeholder="Username"/>
+							<div></div>
 						</div>
 					</div>
 
@@ -118,6 +118,7 @@
 						</label>
 						<div class="col-sm-6">
 							<input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
+							<div></div>
 						</div>
 					</div>
 
@@ -128,6 +129,7 @@
 						</label>
 						<div class="col-sm-6">
 							<input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password"/>
+							<div></div>
 						</div>
 					</div>
 
@@ -138,6 +140,7 @@
 								 
 								<label>
 									<input type="checkbox" value="yes" name="checkbox_accept" id = "checkbox_accept"/> I Accept
+									<div></div>
 								</label>
 							</div>
 						</div>
@@ -158,8 +161,6 @@
 </div>
 <!-- <script type="text/javascript" src="../js/validate.js"></script> -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
-
-
 <script src="../js/jquery.min.js"></script>
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 <script src="../js/bootstrap.min.js"></script>

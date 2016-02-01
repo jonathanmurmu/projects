@@ -52,19 +52,21 @@
                 <form role="form" action="/cgi-bin/projects/task/app/authenticate.py" method="post">
                         <!--username-->
                         <div class="form-group has-feedback">
-                            <input type="text" class="form-control" placeholder="Username" id="username" name="username"required/>
-                            <i class="glyphicon glyphicon-user form-control-feedback"></i>
+                            <input type="text" class="form-control" placeholder="Username" id="username" name="username"/>
+                            <div></div>
+                            <div><i class="glyphicon glyphicon-user form-control-feedback"></i></div>
                         </div>
                         <!--password-->
                         <div class="form-group has-feedback">
-                            <input type="password" class="form-control" placeholder="Password" id="password" name="password" required/>
-                            <i class="glyphicon glyphicon-lock form-control-feedback"></i>
+                            <input type="password" class="form-control" placeholder="Password" id="password" name="password"/>
+                            <div></div>
+                            <div><i class="glyphicon glyphicon-lock form-control-feedback"></i></div>
                         </div>
 
                         <div class="row">
                             <span class="col-md-6">
                                 <!--sign in button-->
-                                <input type="submit" class="btn btn-primary custom-but  btn-signin" value="Sign In"/>
+                                <input type="submit" id = "login_submit" class="btn btn-primary custom-but  btn-signin" value="Sign In"/>
                                 <!--    Sign In
                                 </button> -->
                             </span>                     
@@ -92,5 +94,7 @@
 <script src="../js/jquery.min.js"></script>
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/validateLogin.js"></script>
+
 </body>
 </html> 
