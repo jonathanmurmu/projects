@@ -5,6 +5,9 @@ And also display error message for wrong username and password """
 import MySQLdb
 import cgi
 import cgitb
+import json
+import sys
+cgitb.enable()
 # Create instance of FieldStorage 
 form = cgi.FieldStorage()
 # connect to the database
@@ -16,7 +19,8 @@ cursor = db.cursor()
 txt_username = form.getvalue('username')
 txt_password = form.getvalue('password')
 print "Content-type:text/html\r\n\r\n"
-print
+print 
+response=dict()
 try:
 
     sql_query1 = "SELECT user_detail_id FROM user_detail where username = '{0}' and password = '{1}'".format(txt_username,txt_password)
@@ -45,7 +49,7 @@ try:
                     address_line_1 = row[5]
                     address_line_2 = row[6]
                     street = row[7]
-                    zip_code = row [8]                  
+                    zip_code = row[8]                  
                     contact_number = row[9]
                     extra_note = row[10]
                     mail = row[11]
@@ -73,7 +77,8 @@ try:
                     other="other"
                 else:
                     other=""
-
+                response.update({'success': False, 'message': "logged in", 'status':'active'})
+                print json.JSONEncoder().encode(response)
                 print ''.join(line).format(first_name,last_name,date_of_birth,martial_status,gender,address_line_1,address_line_2,street,zip_code,contact_number,extra_note,mail,message,phone_call,other,email,username,user_detail_id,image_path)
 
             except Exception as e:
@@ -92,14 +97,19 @@ try:
             tag='<div class="alert alert-danger">\
                     <strong>Error!</strong> Your account is not active. Please activate\
                 </div>'
-            print ''.join(f).format(tag)
+            # print ''.join(f).format(tag)
+            response.update({'success': True, 'message': "Your account is not active. Please activate", 'status':'not active'})
+            print json.JSONEncoder().encode(response)
+
     else:
 
         f=open('../static/html_data/login_error.text')
         tag='<div class="alert alert-danger">\
                     <strong>Error!</strong> Please Check..!\
                 </div>'
-        print ''.join(f).format(tag)
+        # print ''.join(f).format(tag)
+        response.update({'success': True, 'message': "Please Check",'status':'error'})
+        print json.JSONEncoder().encode(response)
 except Exception as e:
     f=open('../static/html_data/login_error.text')
     tag='<div class="alert alert-danger">\
@@ -107,8 +117,8 @@ except Exception as e:
         </div>'.format(e)
     print ''.join(f).format(tag)
 
-print '</body>'
-print '</html>'
+# print '</body>'
+# print '</html>'
 
 # close the mysql database connection
 db.close()

@@ -1,5 +1,4 @@
 var ERROR_FLAG = 0;
-
 function error_display(element_id,message){
 	$(element_id).parent().addClass("has-error has-feedback");
 	$(element_id).next().html('<span class="glyphicon glyphicon-remove form-control-feedback"></span><p class ="text-danger"><small>'+message+'</small></p>');
@@ -8,7 +7,6 @@ function error_display(element_id,message){
 function error_check_display(element_id,message){
 	$(element_id).parent().parent().addClass("has-error has-feedback");
 	$(element_id).next().html('<p class ="text-danger small"><small>'+message+'</small></p>');
-
 }
 function error_radio_display(element_id,message){
 	$("#error-text-radio").html('<label><p class ="text-danger small"><small>'+message+'</small></p></label>');
