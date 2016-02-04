@@ -31,7 +31,7 @@ $(document).ready(function(){
 		ERROR_FLAG = 0;
 	});
 	// validate the page
-   $("#submit").on("click",function(){
+   $("#form_submit").on("click",function(){
    		var first_name = $.trim($("#first_name").val());
    		var last_name = $.trim($("#last_name").val());
 		var date_of_birth = $.trim($("#date_of_birth").val());

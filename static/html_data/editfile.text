@@ -7,7 +7,6 @@
 	<!--set the page width to size of the device and zoom level to 1-->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Edit Page</title>
-	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
 	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/custom.css">
  </head>
@@ -68,7 +67,6 @@
 		<div class="col-md-8">
 		</div>
 	</div>
-
 	<!-- edit page content -->
 	<div class="row form-content">
 		<div class="row">
@@ -102,8 +100,8 @@
 			  						<input type="text" value="{2}"class="form-control" id="date_of_birth" name="date_of_birth" placeholder="yyyy-mm-dd">
 			  						<div></div>			  		
 								</div>
-							</div><!--div form-group-->				
-						</div><!--div col-sm-6-->
+							</div>	
+						</div>
 						<!--martial status-->
 			 			<div class="col-sm-6">
 							<div class="form-group">
@@ -114,8 +112,8 @@
 			  							<option value="married" {4}>Married</option>
 									</select>			
 								</div>
-							</div><!--form-group-->
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 					</div>
 					<!--gender-->
 					<div class="row">
@@ -137,11 +135,10 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<input type="hidden" name="user_detail_id" value="{17}">
-
 							<input type="submit" id = "personal_submit" class="btn btn-primary" value="Save"/>
 						</div>						
 					</div>
-				</div> <!--jumbotron end personal information>-->
+				</div> 
 			</form>
 		</div>
 		<div class="col-md-2">
@@ -177,8 +174,8 @@
 					  					<input type="text" value="{9}"class="form-control" id="street" name="street" placeholder="Street">
 									</div>		
 								</div>
-							</div><!--div form-group-->				
-						</div><!--div col-sm-6-->
+							</div>	
+						</div>
 						<!--zip-->
 			 			<div class="col-sm-6">
 							<div class="form-group">
@@ -187,9 +184,8 @@
 									<input type="text" value="{10}"class="form-control" id="zip" name="zip" placeholder="Zip">
 									<div></div>
 								</div>
-
-							</div><!--form-group-->
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 					</div>
 					<!--phone-->
 					<div class="row">
@@ -202,21 +198,19 @@
 								</div>		
 							</div>
 						</div>
-					</div><!--div row-->	
+					</div>
 					<div class="row">
 						<div class="col-sm-12">
 							<input type="hidden" name="user_detail_id" value="{17}">
-
 							<input type="submit" id = "address_submit" class="btn btn-primary" value="Save"/>
 						</div>						
 					</div>
-				</div> <!--jumbotron end address information>-->
+				</div> 
 			</form>
 		</div>
 		<div class="col-md-2">
 		</div>
-	</div><!-- address end -->
-
+	</div>
 	<!-- extra note -->
 	<div class="row">
 		<div class="col-md-2">
@@ -228,8 +222,6 @@
 			<form role="form" action="/cgi-bin/projects/task/app/extra_update.py" method="post">
 				<div class="jumbotron">
 					<div class="form-group">
-						
-						<!-- <label class="control-label col-sm-2">Extra Note:</label> -->
 						<div class="">
 		  					<textarea rows="3"  class="form-control" id="extra_note" name="extra_note" placeholder="Extra note">{12}</textarea>
 						</div>		
@@ -241,13 +233,12 @@
 							<input type="submit" class="btn btn-primary" value="Save"/>
 						</div>						
 					</div>
-				</div><!--extra note jumbtron-->
+				</div>
 			</form>
 		</div>
 		<div class="col-md-2">
 		</div>
-	</div><!-- extra note end -->
-
+	</div>
 	<!-- Preffered Communication Medium -->
 	<div class="row">
 		<div class="col-md-2">
@@ -284,17 +275,15 @@
 		    		<div class="row">
 						<div class="col-sm-6">
 							<input type="hidden" name="user_detail_id" value="{17}">
-
 							<input type="submit" class="btn btn-primary" value="Save"/>
 						</div>						
 					</div>
-				</div><!--jumbotron-->
+				</div>
 			</form>
 		</div>
 		<div class="col-md-2">
 		</div>
 	</div>
-
 	<!-- profile photo upload -->
 	<div class="row">
 		<div class="col-md-2">
@@ -316,21 +305,17 @@
 							<input type="submit" class="btn btn-primary" value="Save"/>
 						</div>						
 					</div>
-				</div><!--jumbotron-->
+				</div>
 			</form>
 		</div>
 		<div class="col-md-2">
 		</div>
 	</div>
-	<!-- profile photo upload end -->
-</div> <!--forn ontent end-->
-
-	<!-- edit page content end -->
+</div>
+<!-- edit page content end -->
 </div>
 <!-- <script type="text/javascript" src="/cgi-bin/projects/task/static/js/validate.js"></script> -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script src="/cgi-bin/projects/task/static/js/jquery.min.js"></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 <script src="/cgi-bin/projects/task/static/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/cgi-bin/projects/task/static/js/validate_personal_details.js"></script>
 <script type="text/javascript" src="/cgi-bin/projects/task/static/js/validate_address.js"></script>

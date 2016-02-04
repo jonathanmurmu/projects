@@ -7,7 +7,6 @@
 	<!--set the page width to size of the device and zoom level to 1-->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Profile Page</title>
-	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
 	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/cgi-bin/projects/task/static/css/custom.css">
  </head>
@@ -60,7 +59,6 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 cover-pic">
-			<!-- <img src="coverpic.png"/> -->
 		</div>
 	</div>
 
@@ -78,9 +76,7 @@
 	<div class="row form-content">
 		<div class="col-md-2">
 		</div>
-
 		<div class="col-md-8">
-
 			<form role="form" action="/cgi-bin/projects/task/app/edit.py" method="post">
 				<div class="jumbotron">
 					<h3>Personel Information</h3>
@@ -89,14 +85,12 @@
 				  		<label class="control-label col-sm-12">Name:</label>	
 						<div class="col-sm-6">
 				  			<p>{0} </p>
-						</div>
-						
+						</div>						
 						<!--last name-->
 						<div class="col-sm-6">
 				  			<p>{1}</p>
 						</div>													
 					</div>
-
 					<div class="row">
 						<!--date of birth-->
 						<div class="col-sm-6">				
@@ -105,9 +99,8 @@
 								<div class="col-sm-6">
 			  						<p>{2}</p>
 								</div>
-							</div><!--div form-group-->
-				
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 						<!--martial status-->
 			 			<div class="col-sm-6">
 							<div class="form-group">
@@ -115,28 +108,19 @@
 								<div class="col-sm-6">
 									<p>{3}</p>
 								</div>
-
-							</div><!--form-group-->
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 					</div>
-				
-
 					<!--gender-->
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="control-label col-sm-2">Gender: {4}</label>
-								<!-- <label class="control-radio-inline">
-			      					<input type="radio" name="optradio" value="male">Male
-			    				</label>
-			    				<label class="control-radio-inline">
-			      					<input type="radio" name="optradio" value="female">Female
-			    				</label> -->	
 			    				<p></p>		
 							</div>
 						</div>
-					</div><!--div row-->	
-				</div> <!--jumbotron end-- personal information>-->
+					</div>
+				</div>
 				<div class="jumbotron">
 					<h3>Residence Address</h3>
 					<!-- name -->
@@ -145,13 +129,11 @@
 						<div class="col-sm-6">
 				  			<p>{5} </p>
 						</div>
-						
 						<!--address line 2-->
 						<div class="col-sm-6">
 				  			<p>{6}</p>
 						</div>													
 					</div>
-
 					<div class="row">
 						<!--street and zip-->
 						<div class="col-sm-6">				
@@ -163,8 +145,8 @@
 					  					<p>{7}</p>
 									</div>		
 								</div>
-							</div><!--div form-group-->				
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 						<!--zip-->
 			 			<div class="col-sm-6">
 							<div class="form-group">
@@ -172,9 +154,8 @@
 								<div class="col-sm-6">
 									<p>{8}</p>
 								</div>
-
-							</div><!--form-group-->
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 					</div>
 					<!--phone-->
 					<div class="row">
@@ -184,20 +165,17 @@
 			    				<p></p>		
 							</div>
 						</div>
-					</div><!--div row-->	
-				</div> <!--jumbotron end- personal information>-->
-
+					</div>
+				</div>
 				<!--extra note-->
 				<div class="jumbotron">
 					<div class="form-group">
 						<h3>Extra Note</h3>
-						<!-- <label class="control-label col-sm-2">Extra Note:</label> -->
 						<div class="">
 		  					<p>{10}</p>
 						</div>		
 					</div>
-				</div><!--extra note jumbtron-->
-
+				</div>
 				<!--prefered communication medium-->
 				<div class="jumbotron">
 					<h3>Prefered Comunication Medium</h3>
@@ -214,33 +192,27 @@
 		      			</div>
 					<div class="col-sm-offset-2 ">
 		        			<div class="checkbox">
-		          				<!-- <label><input type="checkbox">Phone Call</label> -->
 		          				<p>{13}</p>
 		        			</div>
 		      			</div>
 					<div class="col-sm-offset-2 ">
 		        			<div class="checkbox">
-		          				<!-- <label><input type="checkbox">Other</label> -->
 		          				<p>{14}</p>
 		        			</div>
 		      			</div>
 		    		</div>
-				</div><!--jumbotron-->
-
+				</div>
 				<div class="jumbotron">
-					<!-- <h3></h3> -->
-					<!--  -->
 					<div class="row">
 						<!--date of birth-->
 						<div class="col-sm-6">				
 							<div class="form-group">
 								<label class="control-label col-sm-12">Email:</label>
 								<div class="col-sm-6">
-			  						<!-- <input type="date" class="form-control" id="dateOfBirth"> -->
 			  						<p>{15}</p>
 								</div>
-							</div><!--div form-group-->				
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 						<!--martial status-->
 			 			<div class="col-sm-6">
 							<div class="form-group">
@@ -250,21 +222,18 @@
 								</div>
 								<!-- hidden -->
 								<input type="hidden" name="user_detail_id" value="{17}">
-							</div><!--form-group-->
-						</div><!--div col-sm-6-->
+							</div>
+						</div>
 					</div>					
 				</div>
 				<input type="submit" class="btn btn-primary" value="Edit"/>
 			</form>
-		</div> <!--mid section div-->
+		</div> 
 		<div class="col-md-2">
 		</div>
 	</div>
-	<!-- profiel page content ends here -->
 </div>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
 <script src="/cgi-bin/projects/task/static/js/jquery.min.js"></script>
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
 <script src="/cgi-bin/projects/task/static/js/bootstrap.min.js"></script>
 </body>
 </html>
