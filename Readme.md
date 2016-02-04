@@ -4,7 +4,7 @@ Assginment - Login, signup and profile page.
 Description:
 --------------------------------------------------
 
-Web application that allows user to register his details. Login into his accout and view his profile. In this application after successful register an activation link is send to the user's email id. The user need to click the link to verify and activate his account. unless the user activates his account he cannot view his profile. In this application there is also a functionality to recover the user's credentials, if he forgets his credentials. The credentials is mailed to his registered email id.
+Web application that allows user to register his details. Login into his accout and view his profile. In this application after successful register an activation link is send to the user's email id. The user need to click the link to verify and activate his account. unless the user activates his account he cannot view his profile. In this application there is also a functionality to recover the user's credentials, if he forgets his credentials. The credentials is mailed to his registered email id. The user can also log into his account and edit his profile.
 
 ---------------------------------------------------
 Packages required for executing the assgingment :-
